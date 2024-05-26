@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Start navbar section */
+.navbar .nav-link {
+    color: black !important;
+    position: relative;
+    margin-right: 1rem;
+}
+
+/* End navbar section */
+
+/* Start home section */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.item-img {
+    height: 100vh;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+}
+
+.btn-custom {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.btn-primary.btn-custom {
+    background-color: #007bfff4;
+    border-color: #007bff;
+}
+
+.btn-primary.btn-custom:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary.btn-custom {
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-secondary.btn-custom:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 3.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-custom {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .btn-custom {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+
+/* End home section */
+
+/* About section */
+.formatted-paragraph {
+    white-space: pre-line;
+    color: #787878;
+}
+
+.about-btn {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    font-size: 0.9rem;
+    width: 10rem;
+    height: 2.5rem;
+    border: 1.5px solid gray;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-btn:hover {
+    background-color: black;
+    color: white
+}
+
+.margin-custom {
+    margin-top: 10rem;
+    opacity: 0.2;
+    margin-bottom: 10rem;
+}
+
+
+/* End about section */
+
+
+/*creative team */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+}
+
+.letter-background {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+    /* Light grey color */
+    z-index: 1;
+}
+
+
+
+/*end creative team*/
+/* what we do*/
+
+.whatWeDo {
+    background-color: gray;
+    margin-top: 10rem;
+}
+
+.whatWeDo {
+    display: flex;
+    justify-content: center;
+}
+
+.container-title {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.txt {
+    color: #f8f9fa;
+    padding: 20px;
+    width: 15rem;
+    text-align: start;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5rem;
+}
+
+
+.grid {
+    display: contents;
+}
+
+.grid i {
+    grid-column: 1;
+}
+
+.grid span {
+    grid-column: 2;
+}
+
+/*end what we do*/
+/* start section price*/
+.cheapest-prices {
+    margin-top: 4rem;
+
+}
+
+.price-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    text-align: center;
+    transition: transform 0.3s;
+    text-align: start;
+    padding-left: 1.5rem;
+
+
+}
+
+.card-price small {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 20;
+    left: 0;
+    padding-left: 30px;
+}
+
+.card-price sub {
+    font-size: 2.5rem;
+
+}
+
+.price-card hr {
+    width: 90%;
+    margin: 2rem auto;
+
+}
+
+.special-card {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    text-align: start;
+}
+
+.price-card .btn-primary {
+    margin-bottom: 20px;
+}
+
+.card-price {
+    font-size: 2rem;
+
+    margin: 0.5rem 0;
+
+}
+
+.list-unstyled {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin: 0.5rem 0;
+}
+
+/*prices section*/
+
+
+/*customer section  */
+.carousel-indicators .active {
+    background-color: #007bff;
+}
+
+#customer .item img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.price-card-2 {
+    padding: 20px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 50%;
+    height: 70%;
+}
+
+.second-carousel [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .price-card-2 {
+        width: 60%;
+        height: auto;
+    }
+
+    #customer .item img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .price-card-2 {
+        width: 70%;
+        height: auto;
+    }
+
+    #customer .item img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .price-card-2 {
+        width: 80%;
+        height: auto;
+    }
+
+    #customer .item img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .carousel-inner {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .price-card-2 {
+        width: 90%;
+        height: auto;
+    }
+
+    #customer .item img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .carousel-inner {
+        padding: 1rem;
+    }
+}
+
+
+/*end customer
+*/
+.content-form {
+    position: relative;
+}
+
+.letter-background-2 {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.contact-form
+{
+    margin: 30;
+}
+.form, .text-custom{
+    margin-left: 15%;
+}
